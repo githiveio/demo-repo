@@ -1,0 +1,3 @@
+vars:
+  a_var: "this is a setting"
+  b_var: "this is another setting" # **some_unique_id_used_in_the_codebase**
