@@ -1,0 +1,26 @@
+apiVersion: githive.io/v1
+kind: Template
+metadata:
+  name: demp-repo-configs
+  title: Edit the configuration for the demo repo
+  description: This is an example demo repository that will be used to illustrate how you can use githive.io to modify all sorts of config data in your applications.
+  repo: git@github.com:githiveio/demo-repo.git
+  maxbranches: 1
+  branching: configchange/v{{iteration_number}}
+spec:
+  owner: management
+  # these are the steps which are rendered in the frontend with the form input
+  parameters:
+    - title: Fill in some steps
+      codeid: some_unique_id_used_in_the_codebase
+      files:
+        - example.py
+        - example.yaml
+      required:
+        - name
+      properties:
+        name:
+          title: Name
+          type: string
+          description: Unique name of the component
+          ui:autofocus: true
