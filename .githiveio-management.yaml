@@ -6,7 +6,7 @@ metadata:
   description: This is an example demo repository that will be used to illustrate how you can use githive.io to modify all sorts of config data in your applications.
   repo: git@github.com:githiveio/demo-repo.git
   maxbranches: 1
-  branching: configchange/v{{iteration_number}}
+  branching: configchange/v{{GHIO_ITER_NUMBER}}
 spec:
   owner: management
   # these are the steps which are rendered in the frontend with the form input
